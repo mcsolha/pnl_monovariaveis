@@ -10,11 +10,31 @@ using System.Windows.Forms;
 
 namespace T1_PO2
 {
-    public partial class Form1 : Form
+    public partial class FormPrinc : Form
     {
-        public Form1()
+        public FormPrinc()
         {
             InitializeComponent();
+        }
+
+        private void metodoChange_CheckedChanged(object sender, EventArgs e)
+        {
+            foreach (GroupBox item in painelPrin.Panel2.Controls)
+            {
+                item.Visible = false;
+            }
+            var radioChecked = radioButtons.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked);
+            switch (radioChecked.Text)
+            {
+                case "Busca Uniforme":
+                    buscaUniItens.Visible = true;
+                    break;
+                case "Busca Dicotômica":
+                    buscaDicItens.Visible = true;
+                    break;
+                default:
+                    break;
+            }
         }
     }
 }
