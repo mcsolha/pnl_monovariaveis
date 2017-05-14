@@ -32,6 +32,18 @@ namespace T1_PO2
                 case "Busca Dicotômica":
                     buscaDicItens.Visible = true;
                     break;
+                case "Seção Áurea":
+                    secAureaItens.Visible = true;
+                    break;
+                case "Busca de Fibonacci":
+                    fibItens.Visible = true;
+                    break;
+                case "Bisseção":
+                    bissecItens.Visible = true;
+                    break;
+                case "Newton":
+                    newItens.Visible = true;
+                    break;
                 default:
                     break;
             }
