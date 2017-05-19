@@ -119,12 +119,12 @@
             this.button1 = new System.Windows.Forms.Button();
             this.flowLayoutPanel8 = new System.Windows.Forms.FlowLayoutPanel();
             this.xotimoDicLabel = new System.Windows.Forms.Label();
-            this.xotimoTextBox = new System.Windows.Forms.TextBox();
+            this.xotimoDicTextBox = new System.Windows.Forms.TextBox();
             this.buscaUniItens = new System.Windows.Forms.GroupBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.funcLabel = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.funcTextBox = new System.Windows.Forms.TextBox();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.aLabel = new System.Windows.Forms.Label();
             this.aTextBox = new System.Windows.Forms.TextBox();
@@ -135,7 +135,7 @@
             this.calcButton = new System.Windows.Forms.Button();
             this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
             this.xotimoLabel = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.xotimoTextBox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.painelPrin)).BeginInit();
             this.painelPrin.Panel1.SuspendLayout();
             this.painelPrin.Panel2.SuspendLayout();
@@ -421,6 +421,7 @@
             this.button5.TabIndex = 2;
             this.button5.Text = "Calcular";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button_Click);
             // 
             // flowLayoutPanel25
             // 
@@ -883,6 +884,7 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "Calcular";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button_Click);
             // 
             // flowLayoutPanel13
             // 
@@ -1063,12 +1065,13 @@
             this.button1.TabIndex = 2;
             this.button1.Text = "Calcular";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button_Click);
             // 
             // flowLayoutPanel8
             // 
             this.flowLayoutPanel8.AutoSize = true;
             this.flowLayoutPanel8.Controls.Add(this.xotimoDicLabel);
-            this.flowLayoutPanel8.Controls.Add(this.xotimoTextBox);
+            this.flowLayoutPanel8.Controls.Add(this.xotimoDicTextBox);
             this.flowLayoutPanel8.Location = new System.Drawing.Point(3, 128);
             this.flowLayoutPanel8.Name = "flowLayoutPanel8";
             this.flowLayoutPanel8.Size = new System.Drawing.Size(235, 26);
@@ -1085,12 +1088,12 @@
             this.xotimoDicLabel.TabIndex = 4;
             this.xotimoDicLabel.Text = "x* =";
             // 
-            // xotimoTextBox
+            // xotimoDicTextBox
             // 
-            this.xotimoTextBox.Location = new System.Drawing.Point(37, 3);
-            this.xotimoTextBox.Name = "xotimoTextBox";
-            this.xotimoTextBox.Size = new System.Drawing.Size(195, 20);
-            this.xotimoTextBox.TabIndex = 5;
+            this.xotimoDicTextBox.Location = new System.Drawing.Point(37, 3);
+            this.xotimoDicTextBox.Name = "xotimoDicTextBox";
+            this.xotimoDicTextBox.Size = new System.Drawing.Size(195, 20);
+            this.xotimoDicTextBox.TabIndex = 5;
             // 
             // buscaUniItens
             // 
@@ -1121,7 +1124,7 @@
             // 
             this.flowLayoutPanel2.AutoSize = true;
             this.flowLayoutPanel2.Controls.Add(this.funcLabel);
-            this.flowLayoutPanel2.Controls.Add(this.textBox1);
+            this.flowLayoutPanel2.Controls.Add(this.funcTextBox);
             this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 3);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.Size = new System.Drawing.Size(235, 26);
@@ -1137,12 +1140,12 @@
             this.funcLabel.TabIndex = 0;
             this.funcLabel.Text = "f(x) =";
             // 
-            // textBox1
+            // funcTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(39, 3);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(193, 20);
-            this.textBox1.TabIndex = 1;
+            this.funcTextBox.Location = new System.Drawing.Point(39, 3);
+            this.funcTextBox.Name = "funcTextBox";
+            this.funcTextBox.Size = new System.Drawing.Size(193, 20);
+            this.funcTextBox.TabIndex = 1;
             // 
             // flowLayoutPanel3
             // 
@@ -1217,12 +1220,13 @@
             this.calcButton.TabIndex = 2;
             this.calcButton.Text = "Calcular";
             this.calcButton.UseVisualStyleBackColor = true;
+            this.calcButton.Click += new System.EventHandler(this.button_Click);
             // 
             // flowLayoutPanel4
             // 
             this.flowLayoutPanel4.AutoSize = true;
             this.flowLayoutPanel4.Controls.Add(this.xotimoLabel);
-            this.flowLayoutPanel4.Controls.Add(this.textBox2);
+            this.flowLayoutPanel4.Controls.Add(this.xotimoTextBox);
             this.flowLayoutPanel4.Location = new System.Drawing.Point(3, 96);
             this.flowLayoutPanel4.Name = "flowLayoutPanel4";
             this.flowLayoutPanel4.Size = new System.Drawing.Size(235, 26);
@@ -1239,12 +1243,12 @@
             this.xotimoLabel.TabIndex = 4;
             this.xotimoLabel.Text = "x* =";
             // 
-            // textBox2
+            // xotimoTextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(37, 3);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(195, 20);
-            this.textBox2.TabIndex = 5;
+            this.xotimoTextBox.Location = new System.Drawing.Point(37, 3);
+            this.xotimoTextBox.Name = "xotimoTextBox";
+            this.xotimoTextBox.Size = new System.Drawing.Size(195, 20);
+            this.xotimoTextBox.TabIndex = 5;
             // 
             // FormPrinc
             // 
@@ -1414,12 +1418,12 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel8;
         private System.Windows.Forms.Label xotimoDicLabel;
-        private System.Windows.Forms.TextBox xotimoTextBox;
+        private System.Windows.Forms.TextBox xotimoDicTextBox;
         private System.Windows.Forms.GroupBox buscaUniItens;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.Label funcLabel;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox funcTextBox;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
         private System.Windows.Forms.Label aLabel;
         private System.Windows.Forms.TextBox aTextBox;
@@ -1430,7 +1434,7 @@
         private System.Windows.Forms.Button calcButton;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
         private System.Windows.Forms.Label xotimoLabel;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox xotimoTextBox;
     }
 }
 
