@@ -1,0 +1,26 @@
+################## INTEGRANTES ##################
+Barbara Carvalho Silva		RA: 141021594
+Luiz Guilherme Silva		RA: 131024451
+Matheus Coelho Solha		RA: 141027134
+
+################## OBSERVAÇÕES ##################
+	As funções das quais foram calculadas as raízes e/ou derivada primeira (seno, cosseno, exponencial, etc) foram provindas da biblioteca Math.
+
+############## LINGUAGEM UTILIZADA ##############
+	Para o desenvolvimento do Trabalho 3 foi utilizada a linguagem de programação C#, a qual é uma linguagem de programação orientada a objeto, contendo recursos adicionais do que a linguagem C.
+
+############# FUNÇÕES DESENVOLVIDAS #############
+	Foram desenvolvidas as seguintes funções:
+
+		Derivada Primeira -> Derivada_1(cos(x), 1.0, out int erro): Resultado: -0,841471
+		     		     Derivada_1(tan(x), 2.4, out int erro): Resultado:  4,155946
+
+		Derivada Segunda  -> Derivada_2(exp(x), 0.3, out int erro): Resultado:  1,378216
+		     		     Derivada_2(ln(x), 2.0, out int erro):  Resultado: -0,258154
+
+		Derivada Terceira -> Derivada_3(sec(x), 0.4, out int erro): Resultado:  5,193099
+		     		     Derivada_3(sin(x), 3.0, out int erro): Resultado:  0,989975
+
+############## CONCLUSÃO #################
+	Através dos algoritmos implementados, ao realizar as derivadas podemos obter a taxa de variação instantânea em relação a determinado ponto de forma muito precisa, isso se dá devido a utilização de um intervalo +h e -h para que convirja a esse resultado. Com esse algoritmos, podemos realizar n derivações apenas nos utilizando da primeira derivada. 
+	

@@ -53,6 +53,7 @@
             this.flowLayoutPanel25 = new System.Windows.Forms.FlowLayoutPanel();
             this.label20 = new System.Windows.Forms.Label();
             this.xotimoNewTextBox = new System.Windows.Forms.TextBox();
+            this.logButtonNew = new System.Windows.Forms.Button();
             this.bissecItens = new System.Windows.Forms.GroupBox();
             this.flowLayoutPanel18 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel19 = new System.Windows.Forms.FlowLayoutPanel();
@@ -69,6 +70,7 @@
             this.flowLayoutPanel21 = new System.Windows.Forms.FlowLayoutPanel();
             this.label15 = new System.Windows.Forms.Label();
             this.xotimoBissecTextBox = new System.Windows.Forms.TextBox();
+            this.logButtonBiss = new System.Windows.Forms.Button();
             this.fibItens = new System.Windows.Forms.GroupBox();
             this.flowLayoutPanel14 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel15 = new System.Windows.Forms.FlowLayoutPanel();
@@ -85,6 +87,7 @@
             this.flowLayoutPanel17 = new System.Windows.Forms.FlowLayoutPanel();
             this.label10 = new System.Windows.Forms.Label();
             this.xotimoFib = new System.Windows.Forms.TextBox();
+            this.logButtonFib = new System.Windows.Forms.Button();
             this.secAureaItens = new System.Windows.Forms.GroupBox();
             this.flowLayoutPanel10 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel11 = new System.Windows.Forms.FlowLayoutPanel();
@@ -101,6 +104,7 @@
             this.flowLayoutPanel13 = new System.Windows.Forms.FlowLayoutPanel();
             this.label5 = new System.Windows.Forms.Label();
             this.xotimoAureaTextBox = new System.Windows.Forms.TextBox();
+            this.logButtonSec = new System.Windows.Forms.Button();
             this.buscaDicItens = new System.Windows.Forms.GroupBox();
             this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel6 = new System.Windows.Forms.FlowLayoutPanel();
@@ -120,6 +124,7 @@
             this.flowLayoutPanel8 = new System.Windows.Forms.FlowLayoutPanel();
             this.xotimoDicLabel = new System.Windows.Forms.Label();
             this.xotimoDicTextBox = new System.Windows.Forms.TextBox();
+            this.logButtonDic = new System.Windows.Forms.Button();
             this.buscaUniItens = new System.Windows.Forms.GroupBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
@@ -136,6 +141,9 @@
             this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
             this.xotimoLabel = new System.Windows.Forms.Label();
             this.xotimoTextBox = new System.Windows.Forms.TextBox();
+            this.logButtonUni = new System.Windows.Forms.Button();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.lastArchieve = new System.Windows.Forms.ToolStripStatusLabel();
             ((System.ComponentModel.ISupportInitialize)(this.painelPrin)).BeginInit();
             this.painelPrin.Panel1.SuspendLayout();
             this.painelPrin.Panel2.SuspendLayout();
@@ -173,6 +181,7 @@
             this.flowLayoutPanel2.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
             this.flowLayoutPanel4.SuspendLayout();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // painelPrin
@@ -194,8 +203,8 @@
             this.painelPrin.Panel2.Controls.Add(this.secAureaItens);
             this.painelPrin.Panel2.Controls.Add(this.buscaDicItens);
             this.painelPrin.Panel2.Controls.Add(this.buscaUniItens);
-            this.painelPrin.Size = new System.Drawing.Size(429, 195);
-            this.painelPrin.SplitterDistance = 158;
+            this.painelPrin.Size = new System.Drawing.Size(445, 255);
+            this.painelPrin.SplitterDistance = 163;
             this.painelPrin.TabIndex = 1;
             // 
             // metodoSelec
@@ -204,7 +213,7 @@
             this.metodoSelec.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metodoSelec.Location = new System.Drawing.Point(0, 0);
             this.metodoSelec.Name = "metodoSelec";
-            this.metodoSelec.Size = new System.Drawing.Size(158, 195);
+            this.metodoSelec.Size = new System.Drawing.Size(163, 255);
             this.metodoSelec.TabIndex = 0;
             this.metodoSelec.TabStop = false;
             this.metodoSelec.Text = "Métodos";
@@ -221,7 +230,7 @@
             this.radioButtons.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.radioButtons.Location = new System.Drawing.Point(3, 16);
             this.radioButtons.Name = "radioButtons";
-            this.radioButtons.Size = new System.Drawing.Size(152, 176);
+            this.radioButtons.Size = new System.Drawing.Size(157, 236);
             this.radioButtons.TabIndex = 0;
             // 
             // buscaUniRadioButton
@@ -302,7 +311,7 @@
             this.newItens.Dock = System.Windows.Forms.DockStyle.Fill;
             this.newItens.Location = new System.Drawing.Point(0, 0);
             this.newItens.Name = "newItens";
-            this.newItens.Size = new System.Drawing.Size(267, 195);
+            this.newItens.Size = new System.Drawing.Size(278, 255);
             this.newItens.TabIndex = 5;
             this.newItens.TabStop = false;
             this.newItens.Text = "Newton";
@@ -314,11 +323,12 @@
             this.flowLayoutPanel22.Controls.Add(this.flowLayoutPanel24);
             this.flowLayoutPanel22.Controls.Add(this.button5);
             this.flowLayoutPanel22.Controls.Add(this.flowLayoutPanel25);
+            this.flowLayoutPanel22.Controls.Add(this.logButtonNew);
             this.flowLayoutPanel22.Dock = System.Windows.Forms.DockStyle.Top;
             this.flowLayoutPanel22.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel22.Location = new System.Drawing.Point(3, 16);
             this.flowLayoutPanel22.Name = "flowLayoutPanel22";
-            this.flowLayoutPanel22.Size = new System.Drawing.Size(261, 150);
+            this.flowLayoutPanel22.Size = new System.Drawing.Size(272, 154);
             this.flowLayoutPanel22.TabIndex = 0;
             // 
             // flowLayoutPanel23
@@ -451,13 +461,24 @@
             this.xotimoNewTextBox.Size = new System.Drawing.Size(195, 20);
             this.xotimoNewTextBox.TabIndex = 5;
             // 
+            // logButtonNew
+            // 
+            this.logButtonNew.Enabled = false;
+            this.logButtonNew.Location = new System.Drawing.Point(3, 128);
+            this.logButtonNew.Name = "logButtonNew";
+            this.logButtonNew.Size = new System.Drawing.Size(232, 23);
+            this.logButtonNew.TabIndex = 4;
+            this.logButtonNew.Text = "Ver Iterações";
+            this.logButtonNew.UseVisualStyleBackColor = true;
+            this.logButtonNew.Click += new System.EventHandler(this.log_Click);
+            // 
             // bissecItens
             // 
             this.bissecItens.Controls.Add(this.flowLayoutPanel18);
             this.bissecItens.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bissecItens.Location = new System.Drawing.Point(0, 0);
             this.bissecItens.Name = "bissecItens";
-            this.bissecItens.Size = new System.Drawing.Size(267, 195);
+            this.bissecItens.Size = new System.Drawing.Size(278, 255);
             this.bissecItens.TabIndex = 4;
             this.bissecItens.TabStop = false;
             this.bissecItens.Text = "Bisseção";
@@ -469,11 +490,12 @@
             this.flowLayoutPanel18.Controls.Add(this.flowLayoutPanel20);
             this.flowLayoutPanel18.Controls.Add(this.button4);
             this.flowLayoutPanel18.Controls.Add(this.flowLayoutPanel21);
+            this.flowLayoutPanel18.Controls.Add(this.logButtonBiss);
             this.flowLayoutPanel18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel18.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel18.Location = new System.Drawing.Point(3, 16);
             this.flowLayoutPanel18.Name = "flowLayoutPanel18";
-            this.flowLayoutPanel18.Size = new System.Drawing.Size(261, 176);
+            this.flowLayoutPanel18.Size = new System.Drawing.Size(272, 236);
             this.flowLayoutPanel18.TabIndex = 0;
             // 
             // flowLayoutPanel19
@@ -576,6 +598,7 @@
             this.button4.TabIndex = 2;
             this.button4.Text = "Calcular";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button_Click);
             // 
             // flowLayoutPanel21
             // 
@@ -605,13 +628,24 @@
             this.xotimoBissecTextBox.Size = new System.Drawing.Size(195, 20);
             this.xotimoBissecTextBox.TabIndex = 5;
             // 
+            // logButtonBiss
+            // 
+            this.logButtonBiss.Enabled = false;
+            this.logButtonBiss.Location = new System.Drawing.Point(3, 128);
+            this.logButtonBiss.Name = "logButtonBiss";
+            this.logButtonBiss.Size = new System.Drawing.Size(232, 23);
+            this.logButtonBiss.TabIndex = 5;
+            this.logButtonBiss.Text = "Ver Iterações";
+            this.logButtonBiss.UseVisualStyleBackColor = true;
+            this.logButtonBiss.Click += new System.EventHandler(this.log_Click);
+            // 
             // fibItens
             // 
             this.fibItens.Controls.Add(this.flowLayoutPanel14);
             this.fibItens.Dock = System.Windows.Forms.DockStyle.Fill;
             this.fibItens.Location = new System.Drawing.Point(0, 0);
             this.fibItens.Name = "fibItens";
-            this.fibItens.Size = new System.Drawing.Size(267, 195);
+            this.fibItens.Size = new System.Drawing.Size(278, 255);
             this.fibItens.TabIndex = 3;
             this.fibItens.TabStop = false;
             this.fibItens.Text = "Busca de Fibonacci";
@@ -623,11 +657,12 @@
             this.flowLayoutPanel14.Controls.Add(this.flowLayoutPanel16);
             this.flowLayoutPanel14.Controls.Add(this.button3);
             this.flowLayoutPanel14.Controls.Add(this.flowLayoutPanel17);
+            this.flowLayoutPanel14.Controls.Add(this.logButtonFib);
             this.flowLayoutPanel14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel14.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel14.Location = new System.Drawing.Point(3, 16);
             this.flowLayoutPanel14.Name = "flowLayoutPanel14";
-            this.flowLayoutPanel14.Size = new System.Drawing.Size(261, 176);
+            this.flowLayoutPanel14.Size = new System.Drawing.Size(272, 236);
             this.flowLayoutPanel14.TabIndex = 0;
             // 
             // flowLayoutPanel15
@@ -730,6 +765,7 @@
             this.button3.TabIndex = 2;
             this.button3.Text = "Calcular";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button_Click);
             // 
             // flowLayoutPanel17
             // 
@@ -759,13 +795,24 @@
             this.xotimoFib.Size = new System.Drawing.Size(195, 20);
             this.xotimoFib.TabIndex = 5;
             // 
+            // logButtonFib
+            // 
+            this.logButtonFib.Enabled = false;
+            this.logButtonFib.Location = new System.Drawing.Point(3, 128);
+            this.logButtonFib.Name = "logButtonFib";
+            this.logButtonFib.Size = new System.Drawing.Size(232, 23);
+            this.logButtonFib.TabIndex = 5;
+            this.logButtonFib.Text = "Ver Iterações";
+            this.logButtonFib.UseVisualStyleBackColor = true;
+            this.logButtonFib.Click += new System.EventHandler(this.log_Click);
+            // 
             // secAureaItens
             // 
             this.secAureaItens.Controls.Add(this.flowLayoutPanel10);
             this.secAureaItens.Dock = System.Windows.Forms.DockStyle.Fill;
             this.secAureaItens.Location = new System.Drawing.Point(0, 0);
             this.secAureaItens.Name = "secAureaItens";
-            this.secAureaItens.Size = new System.Drawing.Size(267, 195);
+            this.secAureaItens.Size = new System.Drawing.Size(278, 255);
             this.secAureaItens.TabIndex = 2;
             this.secAureaItens.TabStop = false;
             this.secAureaItens.Text = "Seção Áurea";
@@ -777,11 +824,12 @@
             this.flowLayoutPanel10.Controls.Add(this.flowLayoutPanel12);
             this.flowLayoutPanel10.Controls.Add(this.button2);
             this.flowLayoutPanel10.Controls.Add(this.flowLayoutPanel13);
+            this.flowLayoutPanel10.Controls.Add(this.logButtonSec);
             this.flowLayoutPanel10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel10.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel10.Location = new System.Drawing.Point(3, 16);
             this.flowLayoutPanel10.Name = "flowLayoutPanel10";
-            this.flowLayoutPanel10.Size = new System.Drawing.Size(261, 176);
+            this.flowLayoutPanel10.Size = new System.Drawing.Size(272, 236);
             this.flowLayoutPanel10.TabIndex = 0;
             // 
             // flowLayoutPanel11
@@ -914,13 +962,24 @@
             this.xotimoAureaTextBox.Size = new System.Drawing.Size(195, 20);
             this.xotimoAureaTextBox.TabIndex = 5;
             // 
+            // logButtonSec
+            // 
+            this.logButtonSec.Enabled = false;
+            this.logButtonSec.Location = new System.Drawing.Point(3, 128);
+            this.logButtonSec.Name = "logButtonSec";
+            this.logButtonSec.Size = new System.Drawing.Size(232, 23);
+            this.logButtonSec.TabIndex = 5;
+            this.logButtonSec.Text = "Ver Iterações";
+            this.logButtonSec.UseVisualStyleBackColor = true;
+            this.logButtonSec.Click += new System.EventHandler(this.log_Click);
+            // 
             // buscaDicItens
             // 
             this.buscaDicItens.Controls.Add(this.flowLayoutPanel5);
             this.buscaDicItens.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buscaDicItens.Location = new System.Drawing.Point(0, 0);
             this.buscaDicItens.Name = "buscaDicItens";
-            this.buscaDicItens.Size = new System.Drawing.Size(267, 195);
+            this.buscaDicItens.Size = new System.Drawing.Size(278, 255);
             this.buscaDicItens.TabIndex = 1;
             this.buscaDicItens.TabStop = false;
             this.buscaDicItens.Text = "Busca Dicotômica";
@@ -932,11 +991,12 @@
             this.flowLayoutPanel5.Controls.Add(this.flowLayoutPanel9);
             this.flowLayoutPanel5.Controls.Add(this.button1);
             this.flowLayoutPanel5.Controls.Add(this.flowLayoutPanel8);
+            this.flowLayoutPanel5.Controls.Add(this.logButtonDic);
             this.flowLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel5.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel5.Location = new System.Drawing.Point(3, 16);
             this.flowLayoutPanel5.Name = "flowLayoutPanel5";
-            this.flowLayoutPanel5.Size = new System.Drawing.Size(261, 176);
+            this.flowLayoutPanel5.Size = new System.Drawing.Size(272, 236);
             this.flowLayoutPanel5.TabIndex = 1;
             // 
             // flowLayoutPanel6
@@ -1095,13 +1155,24 @@
             this.xotimoDicTextBox.Size = new System.Drawing.Size(195, 20);
             this.xotimoDicTextBox.TabIndex = 5;
             // 
+            // logButtonDic
+            // 
+            this.logButtonDic.Enabled = false;
+            this.logButtonDic.Location = new System.Drawing.Point(3, 160);
+            this.logButtonDic.Name = "logButtonDic";
+            this.logButtonDic.Size = new System.Drawing.Size(232, 23);
+            this.logButtonDic.TabIndex = 5;
+            this.logButtonDic.Text = "Ver Iterações";
+            this.logButtonDic.UseVisualStyleBackColor = true;
+            this.logButtonDic.Click += new System.EventHandler(this.log_Click);
+            // 
             // buscaUniItens
             // 
             this.buscaUniItens.Controls.Add(this.flowLayoutPanel1);
             this.buscaUniItens.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buscaUniItens.Location = new System.Drawing.Point(0, 0);
             this.buscaUniItens.Name = "buscaUniItens";
-            this.buscaUniItens.Size = new System.Drawing.Size(267, 195);
+            this.buscaUniItens.Size = new System.Drawing.Size(278, 255);
             this.buscaUniItens.TabIndex = 0;
             this.buscaUniItens.TabStop = false;
             this.buscaUniItens.Text = "Busca Uniforme";
@@ -1113,11 +1184,12 @@
             this.flowLayoutPanel1.Controls.Add(this.flowLayoutPanel3);
             this.flowLayoutPanel1.Controls.Add(this.calcButton);
             this.flowLayoutPanel1.Controls.Add(this.flowLayoutPanel4);
+            this.flowLayoutPanel1.Controls.Add(this.logButtonUni);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 16);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(261, 176);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(272, 236);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // flowLayoutPanel2
@@ -1250,12 +1322,44 @@
             this.xotimoTextBox.Size = new System.Drawing.Size(195, 20);
             this.xotimoTextBox.TabIndex = 5;
             // 
+            // logButtonUni
+            // 
+            this.logButtonUni.Enabled = false;
+            this.logButtonUni.Location = new System.Drawing.Point(3, 128);
+            this.logButtonUni.Name = "logButtonUni";
+            this.logButtonUni.Size = new System.Drawing.Size(232, 23);
+            this.logButtonUni.TabIndex = 5;
+            this.logButtonUni.Text = "Ver Iterações";
+            this.logButtonUni.UseVisualStyleBackColor = true;
+            this.logButtonUni.Click += new System.EventHandler(this.log_Click);
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.lastArchieve});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 233);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.statusStrip1.Size = new System.Drawing.Size(445, 22);
+            this.statusStrip1.TabIndex = 2;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // lastArchieve
+            // 
+            this.lastArchieve.Name = "lastArchieve";
+            this.lastArchieve.Size = new System.Drawing.Size(26, 17);
+            this.lastArchieve.Text = "test";
+            this.lastArchieve.Click += new System.EventHandler(this.lastArchieve_Click);
+            // 
             // FormPrinc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(429, 195);
+            this.ClientSize = new System.Drawing.Size(445, 255);
+            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.painelPrin);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "FormPrinc";
             this.Text = "PNL Monovariáveis";
             this.painelPrin.Panel1.ResumeLayout(false);
@@ -1321,7 +1425,10 @@
             this.flowLayoutPanel3.PerformLayout();
             this.flowLayoutPanel4.ResumeLayout(false);
             this.flowLayoutPanel4.PerformLayout();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -1435,6 +1542,14 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
         private System.Windows.Forms.Label xotimoLabel;
         private System.Windows.Forms.TextBox xotimoTextBox;
+        private System.Windows.Forms.Button logButtonNew;
+        private System.Windows.Forms.Button logButtonBiss;
+        private System.Windows.Forms.Button logButtonFib;
+        private System.Windows.Forms.Button logButtonSec;
+        private System.Windows.Forms.Button logButtonDic;
+        private System.Windows.Forms.Button logButtonUni;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel lastArchieve;
     }
 }
 
