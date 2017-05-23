@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrinc));
             this.painelPrin = new System.Windows.Forms.SplitContainer();
             this.metodoSelec = new System.Windows.Forms.GroupBox();
             this.radioButtons = new System.Windows.Forms.FlowLayoutPanel();
@@ -144,6 +145,7 @@
             this.logButtonUni = new System.Windows.Forms.Button();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.lastArchieve = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             ((System.ComponentModel.ISupportInitialize)(this.painelPrin)).BeginInit();
             this.painelPrin.Panel1.SuspendLayout();
             this.painelPrin.Panel2.SuspendLayout();
@@ -388,6 +390,7 @@
             this.aNewTextBox.Name = "aNewTextBox";
             this.aNewTextBox.Size = new System.Drawing.Size(53, 20);
             this.aNewTextBox.TabIndex = 2;
+            this.aNewTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.episNewTextBox_KeyPress);
             // 
             // label18
             // 
@@ -405,6 +408,7 @@
             this.bNewTextBox.Name = "bNewTextBox";
             this.bNewTextBox.Size = new System.Drawing.Size(53, 20);
             this.bNewTextBox.TabIndex = 2;
+            this.bNewTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.episNewTextBox_KeyPress);
             // 
             // label19
             // 
@@ -422,6 +426,7 @@
             this.episNewTextBox.Name = "episNewTextBox";
             this.episNewTextBox.Size = new System.Drawing.Size(53, 20);
             this.episNewTextBox.TabIndex = 2;
+            this.episNewTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.episNewTextBox_KeyPress);
             // 
             // button5
             // 
@@ -460,6 +465,7 @@
             this.xotimoNewTextBox.Name = "xotimoNewTextBox";
             this.xotimoNewTextBox.Size = new System.Drawing.Size(195, 20);
             this.xotimoNewTextBox.TabIndex = 5;
+            this.xotimoNewTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.episNewTextBox_KeyPress);
             // 
             // logButtonNew
             // 
@@ -555,6 +561,7 @@
             this.aBissecTextBox.Name = "aBissecTextBox";
             this.aBissecTextBox.Size = new System.Drawing.Size(53, 20);
             this.aBissecTextBox.TabIndex = 2;
+            this.aBissecTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.episNewTextBox_KeyPress);
             // 
             // label13
             // 
@@ -572,6 +579,7 @@
             this.bBissecTextBox.Name = "bBissecTextBox";
             this.bBissecTextBox.Size = new System.Drawing.Size(53, 20);
             this.bBissecTextBox.TabIndex = 2;
+            this.bBissecTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.episNewTextBox_KeyPress);
             // 
             // label14
             // 
@@ -589,6 +597,7 @@
             this.lBissecTextBox.Name = "lBissecTextBox";
             this.lBissecTextBox.Size = new System.Drawing.Size(53, 20);
             this.lBissecTextBox.TabIndex = 2;
+            this.lBissecTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.episNewTextBox_KeyPress);
             // 
             // button4
             // 
@@ -722,6 +731,7 @@
             this.aFibTextBox.Name = "aFibTextBox";
             this.aFibTextBox.Size = new System.Drawing.Size(53, 20);
             this.aFibTextBox.TabIndex = 2;
+            this.aFibTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.episNewTextBox_KeyPress);
             // 
             // label8
             // 
@@ -739,6 +749,7 @@
             this.bFibTextBox.Name = "bFibTextBox";
             this.bFibTextBox.Size = new System.Drawing.Size(53, 20);
             this.bFibTextBox.TabIndex = 2;
+            this.bFibTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.episNewTextBox_KeyPress);
             // 
             // label9
             // 
@@ -756,6 +767,7 @@
             this.lFibTextBox.Name = "lFibTextBox";
             this.lFibTextBox.Size = new System.Drawing.Size(53, 20);
             this.lFibTextBox.TabIndex = 2;
+            this.lFibTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.episNewTextBox_KeyPress);
             // 
             // button3
             // 
@@ -889,6 +901,7 @@
             this.aAureaTextBox.Name = "aAureaTextBox";
             this.aAureaTextBox.Size = new System.Drawing.Size(53, 20);
             this.aAureaTextBox.TabIndex = 2;
+            this.aAureaTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.episNewTextBox_KeyPress);
             // 
             // label3
             // 
@@ -906,6 +919,7 @@
             this.bAureaTextBox.Name = "bAureaTextBox";
             this.bAureaTextBox.Size = new System.Drawing.Size(53, 20);
             this.bAureaTextBox.TabIndex = 2;
+            this.bAureaTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.episNewTextBox_KeyPress);
             // 
             // label4
             // 
@@ -923,6 +937,7 @@
             this.lAureaTextBox.Name = "lAureaTextBox";
             this.lAureaTextBox.Size = new System.Drawing.Size(53, 20);
             this.lAureaTextBox.TabIndex = 2;
+            this.lAureaTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.episNewTextBox_KeyPress);
             // 
             // button2
             // 
@@ -1054,6 +1069,7 @@
             this.aDicTextBox.Name = "aDicTextBox";
             this.aDicTextBox.Size = new System.Drawing.Size(92, 20);
             this.aDicTextBox.TabIndex = 2;
+            this.aDicTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.episNewTextBox_KeyPress);
             // 
             // bDicLabel
             // 
@@ -1071,6 +1087,7 @@
             this.bDicTextBox.Name = "bDicTextBox";
             this.bDicTextBox.Size = new System.Drawing.Size(92, 20);
             this.bDicTextBox.TabIndex = 2;
+            this.bDicTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.episNewTextBox_KeyPress);
             // 
             // flowLayoutPanel9
             // 
@@ -1099,7 +1116,8 @@
             this.episTextBox.Location = new System.Drawing.Point(22, 3);
             this.episTextBox.Name = "episTextBox";
             this.episTextBox.Size = new System.Drawing.Size(92, 20);
-            this.episTextBox.TabIndex = 2;
+            this.episTextBox.TabIndex = 3;
+            this.episTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.episNewTextBox_KeyPress);
             // 
             // lLabel
             // 
@@ -1115,14 +1133,15 @@
             this.lTextBox.Location = new System.Drawing.Point(139, 3);
             this.lTextBox.Name = "lTextBox";
             this.lTextBox.Size = new System.Drawing.Size(92, 20);
-            this.lTextBox.TabIndex = 2;
+            this.lTextBox.TabIndex = 3;
+            this.lTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.episNewTextBox_KeyPress);
             // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(3, 99);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(232, 23);
-            this.button1.TabIndex = 2;
+            this.button1.TabIndex = 4;
             this.button1.Text = "Calcular";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button_Click);
@@ -1249,6 +1268,7 @@
             this.aTextBox.Name = "aTextBox";
             this.aTextBox.Size = new System.Drawing.Size(53, 20);
             this.aTextBox.TabIndex = 2;
+            this.aTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.episNewTextBox_KeyPress);
             // 
             // bLabel
             // 
@@ -1266,6 +1286,7 @@
             this.bTextBox.Name = "bTextBox";
             this.bTextBox.Size = new System.Drawing.Size(53, 20);
             this.bTextBox.TabIndex = 2;
+            this.bTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.episNewTextBox_KeyPress);
             // 
             // deltaLabel
             // 
@@ -1283,6 +1304,7 @@
             this.deltaTextBox.Name = "deltaTextBox";
             this.deltaTextBox.Size = new System.Drawing.Size(53, 20);
             this.deltaTextBox.TabIndex = 2;
+            this.deltaTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.episNewTextBox_KeyPress);
             // 
             // calcButton
             // 
@@ -1336,9 +1358,11 @@
             // statusStrip1
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1,
             this.lastArchieve});
             this.statusStrip1.Location = new System.Drawing.Point(0, 233);
             this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
             this.statusStrip1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.statusStrip1.Size = new System.Drawing.Size(445, 22);
             this.statusStrip1.TabIndex = 2;
@@ -1351,6 +1375,15 @@
             this.lastArchieve.Text = "test";
             this.lastArchieve.Click += new System.EventHandler(this.lastArchieve_Click);
             // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripStatusLabel1.Image = global::T1_PO2.Properties.Resources.info_512;
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(16, 17);
+            this.toolStripStatusLabel1.Text = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Click += new System.EventHandler(this.toolStripStatusLabel1_Click);
+            // 
             // FormPrinc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1359,8 +1392,10 @@
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.painelPrin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "FormPrinc";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PNL Monovariáveis";
             this.painelPrin.Panel1.ResumeLayout(false);
             this.painelPrin.Panel2.ResumeLayout(false);
@@ -1550,6 +1585,7 @@
         private System.Windows.Forms.Button logButtonUni;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel lastArchieve;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
     }
 }
 

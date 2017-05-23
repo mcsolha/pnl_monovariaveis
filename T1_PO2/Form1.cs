@@ -10,6 +10,8 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using T1_PO2.Data;
+using T1_PO2.Métodos;
 
 namespace T1_PO2
 {
@@ -136,57 +138,153 @@ namespace T1_PO2
                 case "Busca Uniforme":
                     BuscaUniforme buscUni = new BuscaUniforme();
                     buscUni.FinishCalculating += FinishCalculating;
-                    buscUni.dados.a = Convert.ToDouble(aTextBox.Text);
-                    buscUni.dados.b = Convert.ToDouble(bTextBox.Text);
-                    buscUni.dados.delta = Convert.ToDouble(deltaTextBox.Text);
-                    buscUni.dados.func = funcTextBox.Text;
-                    xotimoTextBox.Text = buscUni.Calcular().ToString();
+                    try
+                    {
+                        buscUni.dados.a = Convert.ToDouble(aTextBox.Text);
+                        buscUni.dados.b = Convert.ToDouble(bTextBox.Text);
+                        buscUni.dados.delta = Convert.ToDouble(deltaTextBox.Text);
+                        buscUni.dados.func = funcTextBox.Text;
+                        xotimoTextBox.Text = buscUni.Calcular().ToString();
+                    }
+                    catch (FormatException)
+                    {
+                        string aux = lastArchieve.Text;
+                        lastArchieve.Text = "Insira um valor válido";
+                        var t = new Timer();
+                        t.Interval = 2000;
+                        t.Tick += (s, eT) => 
+                        {
+                            lastArchieve.Text = aux;
+                            t.Stop();
+                        };
+                        t.Start();
+                    }
                     break;
                 case "Busca Dicotômica":
                     BuscaDic buscDic = new BuscaDic();
                     buscDic.FinishCalculating += FinishCalculating;
-                    buscDic.infos.a = Convert.ToDouble(aDicTextBox.Text);
-                    buscDic.infos.b = Convert.ToDouble(bDicTextBox.Text);
-                    buscDic.infos.l = Convert.ToDouble(lTextBox.Text);
-                    buscDic.infos.e = Convert.ToDouble(episTextBox.Text);
-                    buscDic.infos.func = funcDicTextBox.Text;
-                    xotimoDicTextBox.Text = buscDic.Calcular().ToString();
+                    try
+                    {
+                        buscDic.infos.a = Convert.ToDouble(aDicTextBox.Text);
+                        buscDic.infos.b = Convert.ToDouble(bDicTextBox.Text);
+                        buscDic.infos.l = Convert.ToDouble(lTextBox.Text);
+                        buscDic.infos.e = Convert.ToDouble(episTextBox.Text);
+                        buscDic.infos.func = funcDicTextBox.Text;
+                        xotimoDicTextBox.Text = buscDic.Calcular().ToString();
+                    }
+                    catch (Exception)
+                    {
+                        string aux = lastArchieve.Text;
+                        lastArchieve.Text = "Insira um valor válido";
+                        var t = new Timer();
+                        t.Interval = 2000;
+                        t.Tick += (s, eT) =>
+                        {
+                            lastArchieve.Text = aux;
+                            t.Stop();
+                        };
+                        t.Start();
+                    }
                     break;
                 case "Seção Áurea":
                     SecAurea secAurea = new SecAurea();
                     secAurea.FinishCalculating += FinishCalculating;
-                    secAurea.infos.a = Convert.ToDouble(aAureaTextBox.Text);
-                    secAurea.infos.b = Convert.ToDouble(bAureaTextBox.Text);
-                    secAurea.infos.l = Convert.ToDouble(lAureaTextBox.Text);
-                    secAurea.infos.func = funcAureaTextBox.Text;
-                    xotimoAureaTextBox.Text = secAurea.Calcular().ToString();
+                    try
+                    {
+                        secAurea.infos.a = Convert.ToDouble(aAureaTextBox.Text);
+                        secAurea.infos.b = Convert.ToDouble(bAureaTextBox.Text);
+                        secAurea.infos.l = Convert.ToDouble(lAureaTextBox.Text);
+                        secAurea.infos.func = funcAureaTextBox.Text;
+                        xotimoAureaTextBox.Text = secAurea.Calcular().ToString();
+                    }
+                    catch (Exception)
+                    {
+                        string aux = lastArchieve.Text;
+                        lastArchieve.Text = "Insira um valor válido";
+                        var t = new Timer();
+                        t.Interval = 2000;
+                        t.Tick += (s, eT) =>
+                        {
+                            lastArchieve.Text = aux;
+                            t.Stop();
+                        };
+                        t.Start();
+                    }
                     break;
                 case "Busca de Fibonacci":
                     Fibonacci fib = new Fibonacci();
                     fib.FinishCalculating += FinishCalculating;
-                    fib.infos.a = Convert.ToDouble(aFibTextBox.Text);
-                    fib.infos.b = Convert.ToDouble(bFibTextBox.Text);
-                    fib.infos.l = Convert.ToDouble(lFibTextBox.Text);
-                    fib.infos.func = funcFibTextBox.Text;
-                    xotimoFib.Text = fib.Calcular().ToString();
+                    try
+                    {
+                        fib.infos.a = Convert.ToDouble(aFibTextBox.Text);
+                        fib.infos.b = Convert.ToDouble(bFibTextBox.Text);
+                        fib.infos.l = Convert.ToDouble(lFibTextBox.Text);
+                        fib.infos.func = funcFibTextBox.Text;
+                        xotimoFib.Text = fib.Calcular().ToString();
+                    }
+                    catch (Exception)
+                    {
+                        string aux = lastArchieve.Text;
+                        lastArchieve.Text = "Insira um valor válido";
+                        var t = new Timer();
+                        t.Interval = 2000;
+                        t.Tick += (s, eT) =>
+                        {
+                            lastArchieve.Text = aux;
+                            t.Stop();
+                        };
+                        t.Start();
+                    }
                     break;
                 case "Bisseção":
                     Bissecao biss = new Bissecao();
                     biss.FinishCalculating += FinishCalculating;
-                    biss.infos.a = Convert.ToDouble(aBissecTextBox.Text);
-                    biss.infos.b = Convert.ToDouble(bBissecTextBox.Text);
-                    biss.infos.l = Convert.ToDouble(lBissecTextBox.Text);
-                    biss.infos.func = funcBissecTextBox.Text;
-                    xotimoBissecTextBox.Text = biss.Calcular().ToString();
+                    try
+                    {
+                        biss.infos.a = Convert.ToDouble(aBissecTextBox.Text);
+                        biss.infos.b = Convert.ToDouble(bBissecTextBox.Text);
+                        biss.infos.l = Convert.ToDouble(lBissecTextBox.Text);
+                        biss.infos.func = funcBissecTextBox.Text;
+                        xotimoBissecTextBox.Text = biss.Calcular().ToString();
+                    }
+                    catch (Exception)
+                    {
+                        string aux = lastArchieve.Text;
+                        lastArchieve.Text = "Insira um valor válido";
+                        var t = new Timer();
+                        t.Interval = 2000;
+                        t.Tick += (s, eT) =>
+                        {
+                            lastArchieve.Text = aux;
+                            t.Stop();
+                        };
+                        t.Start();
+                    }
                     break;
                 case "Newton":
                     Newton newt = new Newton();
                     newt.FinishCalculating += FinishCalculating;
-                    newt.infos.a = Convert.ToDouble(aNewTextBox.Text);
-                    newt.infos.b = Convert.ToDouble(bNewTextBox.Text);
-                    newt.infos.e = Convert.ToDouble(episNewTextBox.Text);
-                    newt.infos.func = funcNewTextBox.Text;
-                    xotimoNewTextBox.Text = newt.Calcular().ToString();
+                    try
+                    {
+                        newt.infos.a = Convert.ToDouble(aNewTextBox.Text);
+                        newt.infos.b = Convert.ToDouble(bNewTextBox.Text);
+                        newt.infos.e = Convert.ToDouble(episNewTextBox.Text);
+                        newt.infos.func = funcNewTextBox.Text;
+                        xotimoNewTextBox.Text = newt.Calcular().ToString();
+                    }
+                    catch (Exception)
+                    {
+                        string aux = lastArchieve.Text;
+                        lastArchieve.Text = "Insira um valor válido";
+                        var t = new Timer();
+                        t.Interval = 2000;
+                        t.Tick += (s, eT) =>
+                        {
+                            lastArchieve.Text = aux;
+                            t.Stop();
+                        };
+                        t.Start();
+                    }
                     break;
                 default:
                     break;
@@ -207,6 +305,26 @@ namespace T1_PO2
                 : lastArchieve.Text.Remove(index, retira.Length);
             if(cleanPath != "Nenhum")
                 Process.Start(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) + @"\" + cleanPath);
+        }
+
+        private void episNewTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+        (e.KeyChar != ','))
+            {
+                e.Handled = true;
+            }
+
+            // only allow one decimal point
+            if ((e.KeyChar == ',') && ((sender as TextBox).Text.IndexOf(',') > -1))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void toolStripStatusLabel1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Trabalho realizado para disciplina Pesquisa Operacional 2\nPor: Barbara Carvalho e Matheus Solha","Informações");
         }
     }
 }
