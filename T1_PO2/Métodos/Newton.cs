@@ -40,6 +40,7 @@ namespace T1_PO2.Métodos
                 Iterações += "x[" + (cont + 1) + "]" + "=" + x_ + Environment.NewLine;
                 f_ = Derivada_1(x_);
                 Iterações += "fx[" + (cont + 1) + "]" + "=" + x_ + Environment.NewLine;
+                Iterações += "f'x[" + (cont + 1) + "]" + "=" + f_ + Environment.NewLine;
                 f__ = Derivada_2(x_);
 
                 cont++;

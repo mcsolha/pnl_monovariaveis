@@ -303,20 +303,25 @@ namespace T1_PO2
             string cleanPath = (index < 0)
                 ? lastArchieve.Text
                 : lastArchieve.Text.Remove(index, retira.Length);
-            if(cleanPath != "Nenhum")
+            if(cleanPath != "Nenhum" || cleanPath != "Insira um valor válido")
                 Process.Start(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) + @"\" + cleanPath);
         }
 
         private void episNewTextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
-        (e.KeyChar != ','))
+        (e.KeyChar != ',') &&
+        (e.KeyChar != '-'))
             {
                 e.Handled = true;
             }
 
             // only allow one decimal point
             if ((e.KeyChar == ',') && ((sender as TextBox).Text.IndexOf(',') > -1))
+            {
+                e.Handled = true;
+            }
+            if ((e.KeyChar == '-') && ((sender as TextBox).Text.IndexOf('-') > -1))
             {
                 e.Handled = true;
             }

@@ -144,8 +144,8 @@
             this.xotimoTextBox = new System.Windows.Forms.TextBox();
             this.logButtonUni = new System.Windows.Forms.Button();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.lastArchieve = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.lastArchieve = new System.Windows.Forms.ToolStripStatusLabel();
             ((System.ComponentModel.ISupportInitialize)(this.painelPrin)).BeginInit();
             this.painelPrin.Panel1.SuspendLayout();
             this.painelPrin.Panel2.SuspendLayout();
@@ -1368,13 +1368,6 @@
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
             // 
-            // lastArchieve
-            // 
-            this.lastArchieve.Name = "lastArchieve";
-            this.lastArchieve.Size = new System.Drawing.Size(26, 17);
-            this.lastArchieve.Text = "test";
-            this.lastArchieve.Click += new System.EventHandler(this.lastArchieve_Click);
-            // 
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -1383,6 +1376,13 @@
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(16, 17);
             this.toolStripStatusLabel1.Text = "toolStripStatusLabel1";
             this.toolStripStatusLabel1.Click += new System.EventHandler(this.toolStripStatusLabel1_Click);
+            // 
+            // lastArchieve
+            // 
+            this.lastArchieve.Name = "lastArchieve";
+            this.lastArchieve.Size = new System.Drawing.Size(26, 17);
+            this.lastArchieve.Text = "test";
+            this.lastArchieve.Click += new System.EventHandler(this.lastArchieve_Click);
             // 
             // FormPrinc
             // 

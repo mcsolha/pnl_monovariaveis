@@ -33,9 +33,11 @@ namespace T1_PO2.Métodos
                 fz = infos.parser.Parse(infos.func);
 
                 Iterações += "Iter. " + cont + "->" + Environment.NewLine;
+                Iterações += "b-a = " + (infos.a - infos.b) + Environment.NewLine;
                 Iterações += "x = " + x + Environment.NewLine;
                 Iterações += "fx = " + fx + Environment.NewLine;
                 Iterações += "fz = " + fz + Environment.NewLine;
+                
                 if (fx > fz)
                     infos.a = x;
                 else
